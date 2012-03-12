@@ -1,0 +1,73 @@
+#left-container
+	#main-nav-two.presentacion
+		%ul
+			%li.link_1
+				%a(href="/profile") Presentacion
+			%li.link_2
+				%a(href="/docs/doc_0001.pdf" target="_blank") Organigrama
+	#services.nice-list-two
+		%header
+			%h5 Services
+		%ul
+			%li#li_1
+				.name EsSalud En Linea
+				.subname SBK
+			%li#li_2
+				.name Limpiesa
+				.subname SILSA
+			%li#li_3
+				.name Modulos
+				.subname SBK
+			%li#li_4
+				.name vigilancia
+				.subname SVICSAC
+#center-container
+	%section
+		%h1 Bienvenidos
+		%article
+			%p Les damos la Bienvenida a la Red Asistencial Puno - EsSalud, esperando que la información proporcionada sea util para el desempeño de sus labores diarias.
+			%p Existiendo el compromiso de seguir mejorando y con vuestras opiniones y sugerencias esperamos conseguirlo en beneficio de nuestra Institucion y la Poblacion Asegurada a la cual nos debemos 
+	%section
+		%h1 Noticias
+		- unless @pagination.empty?
+			- @pagination.each do |notice|
+				%article.notice
+					%header
+						%h2= notice.title
+					.meta= notice.created_at
+					%figure
+						%img{:src => notice.img}
+					%p= sript_html(notice.description)
+					%footer
+						= notice.link
+						= "<a href=\"/notice/1\" class='more'>Ir a Seccion de Noticias</a>"   
+		- else
+			%p No notices!
+	%section
+		%h1 Documentos
+		%article
+			%p Les damos la Bienvenida a la Red Asistencial Puno - EsSalud, esperando que la información proporcionada sea util para el desempeño de sus labores diarias.
+			%p Existiendo el compromiso de seguir mejorando y con vuestras opiniones y sugerencias esperamos conseguirlo en beneficio de nuestra Institucion y la Poblacion Asegurada a la cual nos debemos 
+#right-container
+	.nice-list
+		%header
+			%h5 Aplicativos RRHH
+		%ul(style="background: url(/images/menu-1.png) 10px 0px no-repeat")
+			%li 
+				%a(href="http://grapuno.essalud/sisconper/" target="_blank")SICOMPER
+			%li
+				%a(href="http://grapuno.essalud/cambioturno/" target="_blank")Cambio de Turno
+			%li
+				%a(href="http://grapuno.essalud/bibliotecavirtual/" target="_blank")Biblioteca Virtual
+	.nice-list
+		%header
+			%h5	 Aplicativos
+		%ul(style="background: url(/images/menu-2.png) 10px 0px no-repeat")
+			%li <a id="img_1" href="http://grapuno.essalud/sismat/" target="_blank">SISMAT</a>
+			%li <a id="img_2" href="http://grapuno.essalud/sislab/" target="_blank">SISLAB</a>
+			%li <a id="img_3" href="http://grapuno.essalud/darenal/" target="_blank">Daño Renal</a>
+			%li <a id="img_4" href="http://grapuno.essalud/sicominst" target="_blank">Control Instrumental</a>
+			%li <a id="img_5" href="http://grapuno.essalud/inest" target="_blank">Estadisticas</a>
+	.pretty_login
+		%a(href="/login")
+			%img(src="/images/login.png")

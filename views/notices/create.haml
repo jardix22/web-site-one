@@ -1,0 +1,9 @@
+%section
+	%header
+		%h1 Nueva Noticia
+	%article
+		%form.pretty_form(action="/notice/create" method="POST" enctype="multipart/form-data")
+			%input(type="text" name="title" placeholder="Titulo:" required="")
+			%textarea(name="description" placeholder="Contenido:" required="")
+			%input(type="file" name="file" required="")
+			%input(type="submit" value="Enviar")

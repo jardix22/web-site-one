@@ -1,0 +1,154 @@
+.button, .more, .back {
+  background-color: #fdfdfd;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 0px 1px 1px rgba(0, 0, 0, 0.03) inset;
+  font-size: 0.8em; }
+
+.nice-list {
+  margin: 0px 5px 5px 0px; }
+  .nice-list header h5 {
+    color: #0177d1;
+    font-transform: uppercase;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center; }
+  .nice-list ul {
+    width: 235px; }
+    .nice-list ul li a {
+      display: inline-block;
+      color: #888888;
+      font-size: 0.82em;
+      height: 50px;
+      line-height: 50px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-left: 75px;
+      vertical-align: baseline;
+      width: 160px; }
+      .nice-list ul li a:hover {
+        color: #1b72d2;
+        cursor: pointer; }
+
+a#img_11 {
+  background-position: 10px -500px; }
+
+.nice-list-two {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  margin: 0px 0px 10px 0px;
+  padding-bottom: 5px; }
+  .nice-list-two header {
+    border: 0; }
+    .nice-list-two header h5 {
+      color: #0177d1;
+      font-transform: uppercase;
+      font-size: 12px;
+      line-height: 35px;
+      text-align: center; }
+  .nice-list-two ul {
+    margin-left: 15px; }
+    .nice-list-two ul li {
+      background: url("/images/icons-columna_blue.png") 5px -2px no-repeat;
+      margin: 5px 0px;
+      padding: 3px 1px 3px 60px; }
+      .nice-list-two ul li .name {
+        color: #777777;
+        font-weight: normal;
+        font-size: 13px;
+        text-transform: capitalize;
+        text-decoration: none; }
+      .nice-list-two ul li .subname {
+        color: #346097;
+        font-weight: normal;
+        font-size: 10px;
+        text-transform: capitalize;
+        padding-top: 3px; }
+      .nice-list-two ul li:hover {
+        cursor: pointer; }
+      .nice-list-two ul li#li_2 {
+        background-position: 5px -84px; }
+      .nice-list-two ul li#li_3 {
+        background-position: 5px -44px; }
+      .nice-list-two ul li#li_4 {
+        background-position: 5px -128px; }
+
+#left-content-notice {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  display: inline-block;
+  width: 68%; }
+
+#right-content-notice {
+  vertical-align: top;
+  display: inline-block;
+  width: 31%; }
+
+.more {
+  padding: 5px 10px; }
+
+.back {
+  padding: 5px 20px; }
+
+.meta {
+  color: #666666;
+  border-top: 1px #eeeeee solid;
+  border-bottom: 1px #eeeeee solid;
+  font-size: 10px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  padding: 2px 0; }
+
+#left-content-profile {
+  background-color: rgba(0, 0, 0, 0.02);
+  display: inline-block;
+  height: 100%;
+  width: 24%;
+  vertical-align: top; }
+
+#right-content-profile {
+  vertical-align: top;
+  display: inline-block;
+  width: 75%; }
+
+.blue-list {
+  margin: 10px 0px 10px 15px; }
+  .blue-list h3 {
+    font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #555555; }
+  .blue-list ul li {
+    background: url(/images/sidebar_bullet.png) 3px 10px no-repeat;
+    padding: 5px 0px 5px 15px; }
+
+.presentacion {
+  border-bottom: 1px dashed #dddddd;
+  padding: 10px 0px; }
+  .presentacion ul {
+    margin: 5px 0 0 15px; }
+    .presentacion ul li {
+      background-image: url(/images/nice-img.png);
+      padding-left: 60px;
+      background-position: 5px 0px;
+      background-repeat: no-repeat; }
+      .presentacion ul li.link_1 {
+        background-position: 5px 0px; }
+      .presentacion ul li.link_2 {
+        background-position: 5px -44px; }
+      .presentacion ul li a {
+        color: #777777;
+        cursor: pointer;
+        display: block;
+        font-size: 0.85em;
+        font-weight: 180;
+        height: 45px;
+        line-height: 45px;
+        text-transform: uppercase;
+        text-decoration: none; }
+        .presentacion ul li a:hover {
+          color: #1b72d2; }
+
+.pretty_login {
+  margin-bottom: 20px;
+  display: block;
+  text-align: center; }

@@ -1,0 +1,6 @@
+%h2=  @notice.title
+%h3 Are you sure you want to delete this Notice?
+%form( action="/notice/#{@notice.id}" method="post")
+	%input(type="hidden" name="_method" value="delete")
+	%input(type="submit" value="Delete")or
+	%a(href="/tasks") Cancel

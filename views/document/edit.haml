@@ -1,0 +1,15 @@
+%section
+	%header
+		%h1 Documento
+	%article
+		%form.pretty_form( action="/document/#{@document.id}" method='post' enctype='multipart/form-data')
+			%input(name="_method" type="hidden" value="put")
+			%label Titulo
+			%input(type='text' name='title' value="#{@document.title}" )
+			%label Contenido
+			%textarea(name='description' style="height:5em;")= @document.description
+			%label Adjuntar otra Imagen
+			%input(type='file' name='file')
+			%label Imagen Actual
+			
+			%input(type='submit' value='Enviar' )

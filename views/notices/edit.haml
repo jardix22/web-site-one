@@ -1,0 +1,16 @@
+%section
+	%header
+		%h1 Noticia
+	%article
+		%form.pretty_form( action="/notice/#{@notice.id}" method='post' enctype='multipart/form-data')
+			%input(name="_method" type="hidden" value="put")
+			%label Titulo
+			%input(type='text' name='title' value="#{@notice.title}" )
+			%label Contenido
+			%textarea(name='description')= @notice.description
+			%label Adjuntar otra Imagen
+			%input(type='file' name='file')
+			%label Imagen Actual
+			%figure
+				%img(src='#{@notice.img}')
+			%input(type='submit' value='Enviar' )

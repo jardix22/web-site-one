@@ -1,0 +1,11 @@
+%ul
+	- unless elements.empty?
+		-elements.each do |element|
+			%li
+				.element= element.title
+				.options
+					%a{ :href => "/#{name}/edit/#{element.id}"} Editar
+					%a{ :href => "/#{name}/delete/#{element.id}"} Eliminar
+	- else
+		%li
+			.element No existe campos Registrados

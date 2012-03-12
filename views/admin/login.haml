@@ -1,0 +1,8 @@
+%section
+	%header
+		%h1 Login
+	%article
+		%form.pretty_form(action="/login" method="post")
+			%input(type="text" name="username" placeholder="Usuario:" required="")
+			%input(type="password" name="password" placeholder="Password:" required="")
+			%input(type="submit" value="Login")

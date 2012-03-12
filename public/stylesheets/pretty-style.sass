@@ -1,0 +1,112 @@
+@mixin box-sizing
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+.pretty_form
+	& label
+		display: block
+		margin-top: 0.9em
+		margin-bottom: 0.3em 
+	& input[type='text'], input[type='file'], input[type='password'], textarea, figure
+		border-radius: 5px
+		background-color: white
+		border: 1px solid #ccc
+		color: #777
+		font-size: 0.9em
+		padding: 10px
+		width: 95%
+		margin: 0.3em 0
+	& textarea
+		height: 20em
+	& input[type='submit']
+		display: block
+		margin: 1.2em auto 0.5em auto
+		padding: 5px 0px 
+		width: 80px
+.edit_drop_list li
+	@include box-sizing()
+	background-color: white
+	background-position: 0.9em 1.4em
+	border-radius: 5px
+	border: 1px solid #ccc
+	color: #777
+	font-size: 0.9em
+	margin-bottom: 0.6em
+	padding: 10px
+	width: 100%
+	& div
+		display: inline-block
+		//outline: 1px dashed #999
+		vertical-align: top
+	& .element
+		@include box-sizing()
+		overflow: hidden
+		padding-left: 1em
+		width: 80%
+		//outline: 1px dashed #999
+	& .options
+		@include box-sizing()
+		position: relative
+		width: 19.5%
+		//outline: 1px dashed #999
+		& a
+			display: inline-block
+			vertical-align: top
+			//outline: 1px dashed #999
+			text-align: center
+			width: 48.5%
+#pretty-nav
+	background: rgb(0, 100, 205) url(/images/bg-blue.png) repeat-x
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+	border-color: rgb(0, 100, 205) rgb(0, 100, 205) rgb(0, 63, 129)
+	border-style: solid solid solid
+	border-width: 1px 0px 1px
+	& ul
+		& li
+			display: inline-block
+			text-align: center
+			vertical-align: top
+			& a
+				//color: rgb(0, 100, 205) 
+				color: white
+				display: block
+				text-decoration: none
+				width: 100px
+				text-align: center
+				font-weight: bold
+				//text-transform: uppercase
+				font-size: 0.9em
+				padding: 0.5em 0
+#pretty-subnav
+	display: block
+	position: relative
+	& ul li
+		display: inline-block
+		vertical-align: top
+		& a
+			border-radius: 5px
+			color: rgb(100, 100, 100)
+			display: block
+			font-size: 0.9em
+			margin: 1em 0 1em 1em
+			padding: 0.3em 1.3em
+			text-decoration: none
+			text-align: center
+			border: 1px dashed rgb(100, 100, 100)
+			&:hover
+				color: rgb(0, 100, 205) 
+				border: 1px dashed rgb(0, 100, 205)
+.pretty-left-content
+	display: inline-block
+	outline: 1px dashed #999
+	vertical-align: top
+	width: 24.5%
+.pretty-right-content
+	border-left: 1px dashed #999
+	display: inline-block
+	vertical-align: top
+	width: 75%
+.lagout
+	position: absolute
+	right: 2.5em
+	top: 2.5em

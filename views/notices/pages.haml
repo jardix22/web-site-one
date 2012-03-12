@@ -1,0 +1,12 @@
+%header
+	%h1= get_array(Task,3)
+	%h2= @nums
+%hr	
+#all
+	- unless @pagination.empty?
+		- @pagination.each do |count_|
+			.cont
+				%p= count_.id
+	-else 
+		%p Esta vacio..!!
+%hr

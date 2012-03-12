@@ -1,0 +1,37 @@
+#left-content-notice
+	%section
+		%h1 Notices
+		- unless @pagination.empty?
+			- @pagination.each do |notice|
+				%article.notice
+					%header
+						%h2= notice.title
+					.meta= notice.created_at
+					%figure
+						%img{:src => notice.img}
+					%p= sript_html(notice.description)
+					%footer= notice.link
+		- else
+			%p No notices!
+		%footer
+			.wp-pagenavi
+				%span Page :
+				= @mini_nav
+			// %a(href='/notice/new') New #03A5D1
+#right-content-notice
+	.blue-list
+		%h3 Ultimas Entradas
+		%ul
+			- unless @most_recent_notice.empty?
+				- @most_recent_notice.each do |recent_notice|
+					%li
+						%a(href = "/notice/view/#{recent_notice.id}")= recent_notice.title
+			- else
+				%p No notices!
+	.blue-list
+		%h3 Las más leidas
+		%ul
+			%li
+				%a Don't Worry  12.pts	
+
+				

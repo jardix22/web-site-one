@@ -1,0 +1,35 @@
+.slider{
+	background:#FFF;
+	float: right;
+	margin: 3px 45px 0 0;
+	padding:2px;
+	width:327px;
+}
+#my_slider {
+	height: 167px;
+	list-style: none outside none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width:327px;
+}
+#my_slider li {
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+#my_slider li:first-child {
+	display: block;
+}
+#counter {
+	bottom: 1px;
+	font-size: 0.8em !important;
+	color: #ccc;
+	font-size: 16px;
+	position: absolute;
+	right: 35px;
+	text-align; right;
+}

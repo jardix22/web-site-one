@@ -1,0 +1,9 @@
+%section
+	%header
+		%h1 sing Up
+	%article
+		%form.pretty_form(action="/new/admin" method="post")
+			%input(type="text" name="name" placeholder="User Name :" required="")
+			%textarea(name="description" placeholder="Description :" required="" rows="3")
+			%input(type="password" name="password" placeholder="Password:" required="")
+			%input(type="submit" value="Login")

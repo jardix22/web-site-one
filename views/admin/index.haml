@@ -1,0 +1,5 @@
+%section
+	%header
+		%h1= @title
+	%article.edit_drop_list
+		= html_helper "edit_drop_list", {:name =>@name, :elements => @elements, :attr =>{:class => "select-cen"} }
